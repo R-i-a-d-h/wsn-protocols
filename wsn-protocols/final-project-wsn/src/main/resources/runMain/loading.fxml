@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="209.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="loadingController">
+   <children>
+      <Label alignment="CENTER" layoutX="77.0" layoutY="154.0" prefHeight="25.0" prefWidth="98.0" text="LOADING ...">
+         <font>
+            <Font name="System Bold" size="16.0"/>
+         </font>
+      </Label>
+      <AnchorPane fx:id="pane" layoutX="92.0" layoutY="72.0" prefHeight="66.0" prefWidth="68.0"/>
+   </children>
+</AnchorPane>

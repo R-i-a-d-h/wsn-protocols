@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" prefHeight="381.0" prefWidth="569.0"
+            xmlns="http://javafx.com/javafx/17" fx:controller="runMain.LeachParametersController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="581.0" style="-fx-background-color: #14C38E;">
+         <children>
+            <Label layoutX="66.0" layoutY="13.0" text="SIMULATOR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0"/>
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="21.0" layoutY="11.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <image>
+                  <Image url="@main.png"/>
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="66.0" prefHeight="21.0" prefWidth="158.0" text="Dimensions in meters">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <TextField layoutX="14.0" layoutY="105.0" prefHeight="25.0" prefWidth="158.0" fx:id="xm"/>
+      <TextField fx:id="ym" layoutX="14.0" layoutY="151.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="14.0" layoutY="87.0" prefHeight="17.0" prefWidth="24.0" text="Xm">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="133.0" prefHeight="17.0" prefWidth="24.0" text="Ym">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="66.0" prefHeight="21.0" prefWidth="176.0" text="Coordinates of the Sink">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="sinkx" layoutX="208.0" layoutY="107.0" prefHeight="25.0" prefWidth="158.0"/>
+      <TextField fx:id="sinky" layoutX="208.0" layoutY="153.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="208.0" layoutY="90.0" prefHeight="19.0" prefWidth="52.0" text="Sinkx">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="136.0" prefHeight="19.0" prefWidth="52.0" text="Sinky">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="66.0" prefHeight="21.0" prefWidth="165.0" text="Number of Nodes">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="n" layoutX="407.0" layoutY="106.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="407.0" layoutY="89.0" prefHeight="19.0" prefWidth="52.0" text="N">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="179.0" prefHeight="21.0" prefWidth="158.0" text="Energy Values">
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#onRun" prefHeight="47.0"
+              prefWidth="278.0" stylesheets="@button.css" text="Run"/>
+      <Button layoutX="308.0" layoutY="319.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="259.0"
+              stylesheets="@button.css" text=" Cancel "/>
+      <TextField fx:id="eo" layoutX="14.0" layoutY="218.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="15.0" layoutY="200.0" prefHeight="19.0" prefWidth="104.0" text="Initial Energy">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="eelec" layoutX="14.0" layoutY="266.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="15.0" layoutY="248.0" prefHeight="19.0" prefWidth="89.0" text="Eelec">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="eamp" layoutX="208.0" layoutY="219.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="210.0" layoutY="198.0" prefHeight="19.0" prefWidth="52.0" text="Eamp">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="eda" layoutX="208.0" layoutY="267.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="209.0" layoutY="250.0" prefHeight="19.0" prefWidth="52.0" text="EDA">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="k" layoutX="407.0" layoutY="219.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="407.0" layoutY="199.0" prefHeight="19.0" prefWidth="158.0" text="Size of data package">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="p" layoutX="407.0" layoutY="267.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="407.0" layoutY="249.0" prefHeight="19.0" prefWidth="158.0" text="Percentage of Ch">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="sleep" layoutX="407.0" layoutY="151.0" prefHeight="25.0" prefWidth="158.0"/>
+      <Label layoutX="407.0" layoutY="134.0" prefHeight="19.0" prefWidth="96.0" text="Sleep Time">
+         <font>
+            <Font name="System Bold" size="13.0"/>
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1360.0"
+            style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17"
+            fx:controller="runMain.LeachController">
+   <children>
+      <Label fx:id="lab_2" alignment="CENTER" layoutX="338.0" layoutY="69.0" prefHeight="27.0" prefWidth="287.0"
+             text="Label">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lab_1" alignment="CENTER" layoutX="17.0" layoutY="69.0" prefHeight="27.0" prefWidth="287.0"
+             text="Label">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lab_3" alignment="CENTER" layoutX="763.0" layoutY="69.0" prefHeight="27.0" prefWidth="287.0"
+             text="Label">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lab_4" alignment="CENTER" layoutX="1059.0" layoutY="69.0" prefHeight="27.0" prefWidth="287.0"
+             text="Label">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <AnchorPane fx:id="areapane" layoutY="109.0" prefHeight="550.0" prefWidth="1360.0"
+                  style="-fx-background-color: #B8F1B0;"/>
+      <AnchorPane prefHeight="56.0" prefWidth="1360.0" style="-fx-background-color: #14C38E;">
+         <children>
+            <Label layoutX="66.0" layoutY="13.0" text="SIMULATOR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0"/>
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="21.0" layoutY="11.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <image>
+                  <Image url="@main.png"/>
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ProgressBar fx:id="pr" layoutX="395.0" layoutY="720.0" prefHeight="18.0" prefWidth="615.0" progress="0.0"/>
+      <Button focusTraversable="false" layoutX="601.0" layoutY="669.0" mnemonicParsing="false"
+              onAction="#onStartAndPause" prefHeight="40.0" prefWidth="59.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fx:id="playImage" fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@play.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" layoutX="752.0" layoutY="669.0" mnemonicParsing="false" onAction="#onReplay"
+              prefHeight="40.0" prefWidth="59.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@reload.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" layoutX="1036.0" layoutY="707.0" mnemonicParsing="false" onAction="#onNext"
+              prefHeight="40.0" prefWidth="59.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@next.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" layoutX="302.0" layoutY="707.0" mnemonicParsing="false" onAction="#onBack"
+              prefHeight="40.0" prefWidth="59.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
